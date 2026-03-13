@@ -537,11 +537,10 @@ section {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Estilos para Acordeones */
-.accordion-item {
-    margin-bottom: 16px;
-    overflow: hidden;
-    transition: all 0.3s ease;
+
+/* Estilos para Acordeones - Solo CSS */
+.accordion-checkbox {
+    display: none;
 }
 
 .accordion-header {
@@ -553,6 +552,7 @@ section {
     background: linear-gradient(135deg, var(--light-bg) 0%, white 100%);
     border-left: 4px solid var(--secondary-color);
     transition: all 0.3s ease;
+    margin-bottom: 0;
 }
 
 .accordion-header:hover {
@@ -576,6 +576,7 @@ section {
     font-size: 1.2em;
     transition: transform 0.3s ease;
     color: var(--secondary-color);
+    display: inline-block;
 }
 
 .accordion-header:hover .accordion-icon {
@@ -591,8 +592,9 @@ section {
 }
 
 .accordion-content ul {
-    padding-top: 12px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding 0.4s ease;
 }
 
 .accordion-content li {
@@ -604,4 +606,18 @@ section {
 .accordion-content strong {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+/* Cuando el checkbox está marcado */
+.accordion-checkbox:checked ~ .accordion-content {
+    max-height: 1000px;
+}
+
+.accordion-checkbox:checked ~ .accordion-content ul {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.accordion-checkbox:checked ~ .accordion-header .accordion-icon {
+    transform: rotate(180deg);
 }

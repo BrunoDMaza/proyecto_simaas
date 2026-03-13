@@ -184,11 +184,12 @@
             <p style="font-size: 1.1em; margin-bottom: 30px;">Áreas de desarrollo tecnológico y sustentabilidad organizadas por afinidad temática</p>
 
             <!-- ÁREA 1: SALUD, ALIMENTACIÓN Y BIENESTAR COMUNITARIO -->
-            <div class="concept-card accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="concept-card">
+                <input type="checkbox" id="accordion1" class="accordion-checkbox">
+                <label for="accordion1" class="accordion-header">
                     <h4>🌱 Salud, Alimentación y Bienestar Comunitario</h4>
                     <span class="accordion-icon">▼</span>
-                </div>
+                </label>
                 <div class="accordion-content">
                     <ul style="margin: 15px 0 15px 30px;">
                         <li><strong>Solidaridad Sanitaria e Inclusión Crítica:</strong> Centro Rafael Kohanoff de tecnologías para la salud y la discapacidad</li>
@@ -199,11 +200,12 @@
             </div>
 
             <!-- ÁREA 2: ECONOMÍA SOCIAL Y DESARROLLO TERRITORIAL -->
-            <div class="concept-card accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="concept-card">
+                <input type="checkbox" id="accordion2" class="accordion-checkbox">
+                <label for="accordion2" class="accordion-header">
                     <h4>💼 Economía Social y Desarrollo Territorial</h4>
                     <span class="accordion-icon">▼</span>
-                </div>
+                </label>
                 <div class="accordion-content">
                     <ul style="margin: 15px 0 15px 30px;">
                         <li><strong>TROCAR:</strong> Economía popular, cooperativismo, bancos comunitarios, monedas sociales, monedas digitales, e-marketplace, incubadoras de productos</li>
@@ -215,11 +217,12 @@
             </div>
 
             <!-- ÁREA 3: INFRAESTRUCTURA Y SUSTENTABILIDAD AMBIENTAL -->
-            <div class="concept-card accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="concept-card">
+                <input type="checkbox" id="accordion3" class="accordion-checkbox">
+                <label for="accordion3" class="accordion-header">
                     <h4>🌍 Infraestructura y Sustentabilidad Ambiental</h4>
                     <span class="accordion-icon">▼</span>
-                </div>
+                </label>
                 <div class="accordion-content">
                     <ul style="margin: 15px 0 15px 30px;">
                         <li><strong>Hábitat:</strong> Vivienda sustentable y planificación territorial</li>
@@ -232,11 +235,12 @@
             </div>
 
             <!-- ÁREA 4: TECNOLOGÍA DIGITAL E INDUSTRIA 4.0 -->
-            <div class="concept-card accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="concept-card">
+                <input type="checkbox" id="accordion4" class="accordion-checkbox">
+                <label for="accordion4" class="accordion-header">
                     <h4>💻 Tecnología Digital e Industria 4.0</h4>
                     <span class="accordion-icon">▼</span>
-                </div>
+                </label>
                 <div class="accordion-content">
                     <ul style="margin: 15px 0 15px 30px;">
                         <li><strong>Información & Comunicaciones:</strong> Infraestructura digital y redes comunitarias</li>
@@ -247,11 +251,12 @@
             </div>
 
             <!-- ÁREA 5: MOVILIDAD Y LOGÍSTICA -->
-            <div class="concept-card accordion-item">
-                <div class="accordion-header" onclick="toggleAccordion(this)">
+            <div class="concept-card">
+                <input type="checkbox" id="accordion5" class="accordion-checkbox">
+                <label for="accordion5" class="accordion-header">
                     <h4>🚀 Movilidad y Logística</h4>
                     <span class="accordion-icon">▼</span>
-                </div>
+                </label>
                 <div class="accordion-content">
                     <ul style="margin: 15px 0 15px 30px;">
                         <li><strong>Tecnología Aeroespacial:</strong> Drones, dirigibles híbridos, aviones, cuadricópteros, globos aerostáticos, paramotor, calibración de imágenes espaciales, software libre de análisis, recuperación de documentación técnica aeronáutica</li>
@@ -364,22 +369,6 @@
                 }
             });
         });
-
-        // Función para manejar los acordeones
-        function toggleAccordion(element) {
-            const accordionItem = element.closest('.accordion-item');
-            const content = accordionItem.querySelector('.accordion-content');
-            const icon = element.querySelector('.accordion-icon');
-            
-            // Toggle del contenido
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                icon.style.transform = 'rotate(0deg)';
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                icon.style.transform = 'rotate(180deg)';
-            }
-        }
     </script>
 </body>
 </html>
