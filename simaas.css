@@ -536,3 +536,72 @@ footer::before {
 section {
     animation: fadeInUp 0.6s ease-out;
 }
+
+/* Estilos para Acordeones */
+.accordion-item {
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, var(--light-bg) 0%, white 100%);
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    transform: translateX(4px);
+}
+
+.accordion-header:hover h4 {
+    color: white;
+}
+
+.accordion-header h4 {
+    margin: 0;
+    font-size: 1.25em;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.accordion-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+}
+
+.accordion-header:hover .accordion-icon {
+    color: white;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: white;
+    padding: 0 24px;
+}
+
+.accordion-content ul {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.accordion-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
