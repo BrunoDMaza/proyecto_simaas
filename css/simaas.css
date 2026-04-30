@@ -367,9 +367,17 @@ section h3 {
     color: var(--texto-primario);
     font-size: 1.9em;
     font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
+
+section h4 {
+    font-family: 'Montserrat', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
 
 .caja-crisis, .caja-propuesta, .caja-solidaridad {
     border-radius: 12px;
@@ -403,19 +411,6 @@ body.modo-oscuro .caja-crisis {
 .caja-propuesta {
     background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
     color: #064E3B;
-}
-
-.caja-propuesta > h3 {
-    margin: 1%;
-}
-
-.caja-propuesta > h4 {
-    
-    font-size: 130%;
-}
-
-.caja-propuesta > ul > li {
-    font-size: 120%;
 }
 
 body.modo-oscuro .caja-propuesta {
