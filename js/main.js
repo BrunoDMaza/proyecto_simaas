@@ -159,7 +159,7 @@
                 observadorFade.unobserve(entradas[p].target);
             }
         }
-    }, { threshold: 0.3 });
+    }, { threshold: 0.05 });
 
     for (var q = 0; q < elementosAparecer.length; q++) {
         observadorFade.observe(elementosAparecer[q]);
